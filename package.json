@@ -1,7 +1,7 @@
 {
   "name": "testing-template-repo",
   "version": "1.0.0",
-  "description": "",
+  "description": "The tests should be self-explanatory, and the only rule is that you cannot use `.split` for these challenges.",
   "main": "index.js",
   "scripts": {
     "test": "jest --watch-all"
@@ -11,5 +11,13 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^24.9.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/busrasariguzel/string-theory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/busrasariguzel/string-theory/issues"
+  },
+  "homepage": "https://github.com/busrasariguzel/string-theory#readme"
 }

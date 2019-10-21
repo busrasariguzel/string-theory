@@ -10,7 +10,7 @@ const {
 } = require('./main.js')
 
 describe('crazyCase', () => {
-  it(`returns a string with every other letter uppercased`, () => {
+  it(`returns a string with every other letter uppercase`, () => {
     expect(crazyCase('hello')).toBe('hElLo')
     expect(crazyCase('you')).toBe('yOu')
   })
