@@ -59,7 +59,7 @@ describe('reverse', () => {
 })
 
 describe('crazyCase2ReturnOfCrazyCase', () => {
-  it(`returns a string with every other letter uppercased`, () => {
+  it(`returns a string with every other letter uppercase`, () => {
     expect(crazyCase2ReturnOfCrazyCase('hello')).toBe('hElLo')
     expect(crazyCase2ReturnOfCrazyCase('you')).toBe('yOu')
   })
