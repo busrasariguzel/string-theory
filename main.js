@@ -55,19 +55,22 @@ function reverse(str) {
 
 function crazyCase2ReturnOfCrazyCase(str) {
 let newStr= ''
+let counter = 0;
+str = str.toLowerCase();
 
-  for (i=0;i<str.length;i++) {
-  if (i % 2 ===0 && str[i] !== ' ') {
+  for (let i = 0; i < str.length; i++) {
+  if (counter % 2 === 0) {
   newStr = newStr + str[i].toLowerCase()
   
   } else {
   newStr = newStr + str[i].toUpperCase()
   }
+  if (str[i] !==  ' ') {
+    counter++;
+  }
   }
   return newStr
 }
-
- 
 
 function titleCase(str) {
 let newStr= ''
@@ -97,8 +100,30 @@ function onlyVowels(str) {
   return newStr;
 }
 
-function crazyCase3SonOfCrazyCase() {
+function crazyCase3SonOfCrazyCase(str) {
+  let newStr = '';
+  let counter = 0;
+  str = str.toLowerCase();
+  for (let i = 0; i < str.length; i++) {
+    if(str[i] ===  ' ') {
+      newStr = newStr + ' '
+      counter++;
+    }
+    else if ('0123456789!@#$.,()'.includes(str[i])) {
+      newStr = newStr + str[i]
+      counter++;
+    }
+    else if(counter % 2 === 0) {
+      newStr = newStr + str[i];
+    }
+    else {
+      newStr = newStr + str[i].toUpperCase();
+    }counter++
+  }
+  return newStr;
 }
+
+
 
 
 module.exports = {
