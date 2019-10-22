@@ -105,7 +105,7 @@ describe('onlyVowels', () => {
     expect(onlyVowels('cowardly')).toBe('oa');
   })
 
-  it(`handles uppercased vowels`, () => {
+  it(`handles uppercase vowels`, () => {
     expect(onlyVowels('Anthony DeRosa')).toBe('Aoeoa');
     expect(onlyVowels('New Orleans')).toBe('eOea');
   })
@@ -113,7 +113,7 @@ describe('onlyVowels', () => {
 
 
 describe('crazyCase3SonOfCrazyCase', () => {
-  it(`returns a string with every other letter uppercased`, () => {
+  it(`returns a string with every other letter uppercase`, () => {
     expect(crazyCase3SonOfCrazyCase('hello')).toBe('hElLo')
     expect(crazyCase3SonOfCrazyCase('you')).toBe('yOu')
   })

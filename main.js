@@ -39,30 +39,33 @@ function exclaim(str) {
     newStr = newStr + str[i]
     }
   }
-    return newStr
+    return newStr;
 }
 
-function reverse() {
+function reverse(str) {
+  newStr= ''
+  for (i=1;i<=str.length;i++){
+    if(str[i] !== ' ' ){
+    newStr =  newStr +  str[str.length - i]
+    }
+} 
+    return newStr;
+  }
 
-}
 
 function crazyCase2ReturnOfCrazyCase(str) {
-// let newStr= ''
-// for (i=0;i<str.length;i++) {
-//   if () {
-//   newStr = newStr + str[i].toLowerCase()
-//   } else if (str[i] === " "){
-//   newStr = newStr + str[i]
-//   } else {
-//   newStr = newStr + str[i].toUpperCase()
-//   }
-//   }
-//   return newStr
+let newStr= ''
 
-
-
-
- }
+  for (i=0;i<str.length;i++) {
+  if (i % 2 ===0 && str[i] !== ' ') {
+  newStr = newStr + str[i].toLowerCase()
+  
+  } else {
+  newStr = newStr + str[i].toUpperCase()
+  }
+  }
+  return newStr
+}
 
  
 
@@ -71,7 +74,7 @@ let newStr= ''
 for (i=0;i<str.length;i++){
   if(i == 0){
     newStr = newStr + str[0].toUpperCase()
-  }else{
+  } else{
   if (str[i-1] === ' ') {
   newStr = newStr + str[i].toUpperCase()}
   else {
@@ -84,7 +87,14 @@ for (i=0;i<str.length;i++){
 }
 
 
-function onlyVowels() {
+function onlyVowels(str) {
+  let newStr= ''
+  for (i=0;i<str.length;i++){
+    if('aeiou'.includes(str[i]) || 'AEIOU'.includes(str[i])) {
+      newStr = newStr + str[i]
+  }
+}
+  return newStr;
 }
 
 function crazyCase3SonOfCrazyCase() {
